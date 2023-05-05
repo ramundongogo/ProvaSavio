@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Ensino de idiomas</title>
+</head>
+<body>
+    <form method="post"><fieldset id="field1" style="width: 20%">
+        <legend>Dados Pessoais</legend>
+        <br>Digite seu nome:<input type="text"   id="Nome" name="user" placeholder="Ex: Bruno da silva" required></br>
+        <br>Idade:<input type="number" id="Idade" name="idade" placeholder="19"></br>
+        <br>E-mail:<input type="email" name="email" id="email"placeholder="Ex:Bruno@silva.com"></br>
+        <br>Senha:<input type="password" name="pass" id="pass" placeholder="Digite uma senha" required></br>
+    
+        <br><br>
+      Selecione a Linguagem:
+      <select name="estado">
+        <option value="">- Selecione -</option>
+        <option value="">Inglês</option>
+        <option value="">Japonês</option>
+        <option value="">Português</option>
+        <option value="">Brasileiro</option>
+    </select>
+    </fieldset>
+    
+      <fieldset id="field2" style="width: 20%;">
+            <legend>Dados Profissionais</legend>
+            <br><p>Selecione Seu Pais</p>
+            <input type="checkbox" name="html" id="html">COLOMBIA
+            <input type="checkbox" name="Peru" id="css">PERU
+            <input type="checkbox" name="Argentina" id="javascript">BRASIL
+            <input type="checkbox" name="Brasil" id="typescript">ARGENTINA<br>
+
+
+            <br><br><label for="">
+                Anexe seu currículo de dominio de linguagem: <input type="file" name="arquivo" id="curriculo">
+            </label>
+
+        </fieldset>
+        <br><input type="button" value="Enviar">
+        <input type="button" value="Resetar">
+        </form>
+</body>
+</html>
